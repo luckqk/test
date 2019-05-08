@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qFormTCPServer</class>
+ <widget class="QWidget" name="qFormTCPServer">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>307</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>521</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLineEdit" name="editMsg_2"/>
+    </item>
+    <item>
+     <widget class="QToolButton" name="btnSend_2">
+      <property name="text">
+       <string>发送消息</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>139</y>
+     <width>521</width>
+     <height>151</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>521</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>监听地址</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="comboIP_2">
+      <property name="minimumSize">
+       <size>
+        <width>130</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="editable">
+       <bool>true</bool>
+      </property>
+      <property name="duplicatesEnabled">
+       <bool>false</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>127.0.0.1</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>监听端口</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSpinBox" name="spinPort_2">
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="maximum">
+       <number>65535</number>
+      </property>
+      <property name="value">
+       <number>1200</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actStart">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/620.bmp</normaloff>:/images/images/620.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>开始监听</string>
+   </property>
+   <property name="toolTip">
+    <string>开始监听</string>
+   </property>
+  </action>
+  <action name="actStop">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/624.bmp</normaloff>:/images/images/624.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>停止监听</string>
+   </property>
+   <property name="toolTip">
+    <string>停止监听</string>
+   </property>
+  </action>
+  <action name="actQuit">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/132.bmp</normaloff>:/images/images/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出本程序</string>
+   </property>
+  </action>
+  <action name="actClear">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/212.bmp</normaloff>:/images/images/212.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>清空文本框</string>
+   </property>
+   <property name="toolTip">
+    <string>清空文本框</string>
+   </property>
+  </action>
+  <action name="actHostInfo">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/110.JPG</normaloff>:/images/images/110.JPG</iconset>
+   </property>
+   <property name="text">
+    <string>本机地址</string>
+   </property>
+   <property name="toolTip">
+    <string>获取本机地址</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
