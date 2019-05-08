@@ -1,9 +1,11 @@
-#ifndef PICREMAINWINDOW_H
+﻿#ifndef PICREMAINWINDOW_H
 #define PICREMAINWINDOW_H
 
 #include <QMainWindow>
 
 #include  "qformdoc.h"
+#include  "qformtcp.h"
+#include  "qformtcpserver.h"
 
 namespace Ui {
 class PicReMainWindow;
@@ -30,7 +32,9 @@ private slots:
 
     //void on_actWindowInsite_triggered();
 
-    //void on_actWindow_triggered();
+    void on_actTCPClient_triggered();
+
+    void on_actTCPServer_triggered();
 
     void on_actWidget_triggered();
 

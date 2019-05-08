@@ -47,8 +47,11 @@
    </attribute>
    <addaction name="actWidgetInsite"/>
    <addaction name="actWidget"/>
-   <addaction name="actQuit"/>
    <addaction name="separator"/>
+   <addaction name="actTCPServer"/>
+   <addaction name="actTCPClient"/>
+   <addaction name="separator"/>
+   <addaction name="actQuit"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actWindowInsite">
@@ -99,16 +102,16 @@
     <string>打开文档</string>
    </property>
   </action>
-  <action name="actWindow">
+  <action name="actTCPClient">
    <property name="icon">
     <iconset resource="res.qrc">
-     <normaloff>:/images/images/3.ico</normaloff>:/images/images/3.ico</iconset>
+     <normaloff>:/images/images/110.JPG</normaloff>:/images/images/110.JPG</iconset>
    </property>
    <property name="text">
-    <string>独立MainWindow窗口</string>
+    <string>TCP Client</string>
    </property>
    <property name="toolTip">
-    <string>独立MainWindow窗口</string>
+    <string>TCP客户端</string>
    </property>
   </action>
   <action name="actWidget">
@@ -121,6 +124,18 @@
    </property>
    <property name="toolTip">
     <string>新建Widget独立窗口</string>
+   </property>
+  </action>
+  <action name="actTCPServer">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/images/051.JPG</normaloff>:/images/images/051.JPG</iconset>
+   </property>
+   <property name="text">
+    <string>TCP Server</string>
+   </property>
+   <property name="toolTip">
+    <string>TCP服务端</string>
    </property>
   </action>
  </widget>

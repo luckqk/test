@@ -76,7 +76,7 @@ void QFormDoc::on_actOpen_triggered()
     QString curPath=QDir::currentPath();
 //调用打开文件对话框打开一个文件
     QString aFileName=QFileDialog::getOpenFileName(this,tr("打开一个文件"),curPath,
-                 "C程序文件(*.h *cpp);;文本文件(*.txt);;所有文件(*.*)");
+                 QStringLiteral("C程序文件(*.h *cpp);;文本文件(*.txt);;所有文件(*.*)"));
 
     if (aFileName.isEmpty())
         return; //如果未选择文件，退出

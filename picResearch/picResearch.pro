@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -24,21 +25,31 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+UI_DIR=./UI
+
 SOURCES += \
         main.cpp \
         picremainwindow.cpp \
-    qformdoc.cpp
+    qformdoc.cpp \
+    qformtcp.cpp \
+    qformtcpserver.cpp
 
 HEADERS += \
         picremainwindow.h \
     qformdoc.h \
     ../build-picResearch-Desktop_Qt_5_9_1_MSVC2017_64bit-Debug/ui_picremainwindow.h \
-    ../build-picResearch-Desktop_Qt_5_9_1_MSVC2017_64bit-Debug/ui_qformdoc.h
+    ../build-picResearch-Desktop_Qt_5_9_1_MSVC2017_64bit-Debug/ui_qformdoc.h \
+    ../build-picResearch-Desktop_Qt_5_9_1_MSVC2017_64bit-Debug/ui_qformtcp.h \
+    qformdoc.h \
+    qformtcp.h \
+    qformtcpserver.h
 
 FORMS += \
         picremainwindow.ui \
     picremainwindow.ui \
-    qformdoc.ui
+    qformdoc.ui \
+    qformtcp.ui \
+    qformtcpserver.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
